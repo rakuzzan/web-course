@@ -2,7 +2,7 @@
 
 class SurveyFileStorage
 {
-    public function saveFile(Survey $fileData)
+    public function saveFile(Survey $fileData): void
     {
         if ($fileData->getEmail())
         {
@@ -40,6 +40,5 @@ class SurveyFileStorage
         {
             echo('Не введен email');
         }
-        return;
     }
 }

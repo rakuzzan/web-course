@@ -2,7 +2,7 @@
 
 class RequestSurveyLoader
 {
-    function data(): Survey
+    public function loadSurvey(): Survey
     {
         $email = $_GET["email"] ?? "";
         $firstName = $_GET["first_name"] ?? "";
